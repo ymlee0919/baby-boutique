@@ -1,0 +1,13 @@
+- Poner el link de Messenger
+
+- Poder volver atrás en una sub-categoría
+
+- Mostar los otros elementos de una categoría dentro de la página de una subcategoría
+
+- Mostar todo de una categoría
+
+- Hacer una página con todas las propuestas
+
+- Poner botón de contacto en las páginas intermedias
+
+- Subir el sitio

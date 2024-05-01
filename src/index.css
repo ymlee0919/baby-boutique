@@ -1,0 +1,102 @@
+html{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url(/img/background.jpg);
+    background-repeat: round;
+}
+
+.brand-logo > img{
+    height: 45px;
+    padding-top: 10px;
+}
+
+.text-bold {
+    font-weight: 600 !important;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.img-title {
+    position: absolute; 
+    bottom: 7px;
+    right: 0px;
+    text-shadow: 0px 0px 4px #9fa8da;
+    background-color: rgb(255 255 255 / 60%);
+    padding: 5px 20px;
+    border-radius: 17px 0 0 17px;
+}
+
+.white-shadow-text {
+    text-shadow: 0px 0px 3px white;
+}
+
+div.navbar-fixed > nav.bottom-bar {
+    bottom: 0px;
+    height: 40px;
+    line-height: 49px;
+}
+
+nav.bottom-bar > div > a {
+    color: #616161
+}
+
+span.price-btn {
+    width: 70px;
+    height: 35px;
+    font-size: 19px;
+    color:#7cee18;
+    border-radius: 10px;
+}
+
+span.price-label {
+    font-size: 19px;
+    color: #7cee18;
+    border-radius: 10px;
+    padding: 6px 9px;
+}
+
+.description-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.product-image-wrapper{
+    padding: 12px;
+    background-image: url('/img/product/ProductBackground.png');
+    background-origin: content-box;
+    background-repeat: round;
+}
+
+.want-product-btn {
+    position: absolute;
+    right: 3px !important;
+    bottom: 3px !important;
+    border-radius: 11px !important;
+    padding-left: 13px !important;
+}
+
+.want-category-btn {
+    padding: 6px 8px !important;
+    border-radius: 12px;
+}
+
+.carousel .indicators .indicator-item{
+    border: 1px solid var(--md-sys-color-primary-light);
+}
+
+.carousel-wrapper {
+    border: 1px solid var(--md-ref-palette-primary70);
+    border-radius: 10px;
+}
+
+.carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 5px !important;
+}
+
+div.carousel-fixed-item > div > span.price-label{
+    border-radius: 0 0 10px 0;
+}
