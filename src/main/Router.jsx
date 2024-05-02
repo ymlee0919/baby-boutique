@@ -9,7 +9,7 @@ import Products from "../pages/Products";
 
 const AppRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/baby-boutique/",
     element: <Index />,
     errorElement: <NotFound />,
     children: [
@@ -19,11 +19,11 @@ const AppRouter = createBrowserRouter([
         errorElement: <NotFound />,
       },
       {
-        path: "/:category",
+        path: "/baby-boutique/:category",
         element: <Categories />,
       },
       {
-        path: "/:category/:item",
+        path: "/baby-boutique/:category/:item",
         element: <Products />,
       },
     ],

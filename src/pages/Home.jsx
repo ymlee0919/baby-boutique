@@ -2,6 +2,7 @@ import DataBase from "../db/database";
 import { NavLink } from "react-router-dom";
 import { BsMessenger } from "react-icons/bs";
 import MessengerLink from "../helper/url";
+import { RootURL } from "../App";
 
 export default function Index() {
   return (
@@ -20,10 +21,10 @@ export default function Index() {
         {DataBase.getCategories().map((category) => {
           return (
             <div key={category.id}>
-              <NavLink to={`/${category.url}`}>
+              <NavLink to={`${RootURL}${category.url}`}>
                 <div className="card">
                   <div className="card-image">
-                    <img src={"./img/" + category.img}></img>
+                    <img src={RootURL + "img/" + category.img}></img>
                     <span className="card-title indigo-text text-darken-5 white-shadow-text text-bold">
                       {category.name}
                     </span>

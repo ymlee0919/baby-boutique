@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import {BsMessenger, BsSearch} from "react-icons/bs"
 import MessengerLink from "../helper/url";
+import { RootURL } from "../App";
 
 function buildMessage(category, subCategory) {
   return `Hola, dentro de sus ofertas de ${category.toLowerCase()} me interesaría algún tipo de ${subCategory.toLowerCase()}.`;
@@ -10,9 +11,9 @@ export default function SubCategory({ category, subCategory, parentUrl }) {
   return (
     <>
       <div className="card">
-        <NavLink to={"/" + parentUrl + "/" + subCategory.url}>
+        <NavLink to={RootURL + parentUrl + "/" + subCategory.url}>
           <div className="card-image">
-            <img src={"./img/category/" + subCategory.img}></img>
+            <img src={RootURL + "img/category/" + subCategory.img}></img>
             <span className="card-title indigo-text text-darken-2 white-shadow-text text-bold">
               {subCategory.name}
             </span>
@@ -25,7 +26,7 @@ export default function SubCategory({ category, subCategory, parentUrl }) {
           {subCategory.description}
         </div>
         <div className="card-action center-align">
-          <NavLink to={"/" + parentUrl + "/" + subCategory.url}>
+          <NavLink to={RootURL + parentUrl + "/" + subCategory.url}>
             <BsSearch size={"12px"}></BsSearch> &nbsp;Ver todo
           </NavLink>{" "}
           &nbsp; &nbsp;

@@ -1,18 +1,17 @@
 import { useParams } from "react-router-dom"
 import DataBase from "../db/database";
 import SubCategory from "../components/SubCategory";
+import { RootURL } from "../App";
 
 export default function Categories(){
 
     let params = useParams();
     let category = DataBase.getCategoryByUrl(params.category);
-    console.log(params);
-    console.log(category);
 
     return (
       <>
         <div style={{ position: "relative" }}>
-          <img src={"./img/" + category.img} style={{ width: "100%" }}></img>
+          <img src={RootURL + "img/" + category.img} style={{ width: "100%" }}></img>
           <h5 className="blue-text text-darken-4 img-title">
             {category.name}
           </h5>

@@ -2,6 +2,7 @@ import { useRef, useEffect, useId } from "react";
 import { M } from "@materializecss/materialize";
 import { BsMessenger } from "react-icons/bs";
 import MessengerLink from "../helper/url";
+import { RootURL } from "../App";
 
 function buildMessage(productName) {
   return `Hola, de sus ofertas de ropa de bebé hay algo que me interesa, ${productName.toLowerCase()}.`;
@@ -49,7 +50,7 @@ export default function ProductsList({ products, price }) {
         href={"#" + product.id + "!"}
         data-name={product.name}
       >
-        <img src={"/img/product/" + product.img}></img>
+        <img src={RootURL + "img/product/" + product.img}></img>
       </a>
     );
   });

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { M } from "@materializecss/materialize";
 import DataBase from "../db/database";
 import ScrollToTop from "./ScrollToTop";
+import { RootURL } from "../App";
 
 
 export default function Index()
@@ -25,7 +26,7 @@ export default function Index()
         <nav className="light-blue lighten-5">
           <div className="nav-wrapper container">
             <span className="brand-logo right">
-              <img src="/img/logo.png"></img>
+              <img src={RootURL + "img/logo.png"}></img>
             </span>
           </div>
         </nav>
@@ -49,7 +50,7 @@ export default function Index()
                   {DataBase.getCategories().map((category) => {
                     return (
                       <li key={category.id}>
-                        <NavLink to={`/${category.url}`}>
+                        <NavLink to={`${RootURL}${category.url}`}>
                           {category.name}
                         </NavLink>
                       </li>
@@ -58,7 +59,7 @@ export default function Index()
                 </ul>
               </div>
               <div className="col s4 center-align">
-                <NavLink to={`/`} className="grey-text text-darken-2">
+                <NavLink to={RootURL} className="grey-text text-darken-2">
                   <MdOutlineHome size={"1.4rem"}></MdOutlineHome>
                 </NavLink>
               </div>
