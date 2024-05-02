@@ -6,6 +6,8 @@ export default function Categories(){
 
     let params = useParams();
     let category = DataBase.getCategoryByUrl(params.category);
+    console.log(params);
+    console.log(category);
 
     return (
       <>
