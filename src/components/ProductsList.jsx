@@ -81,7 +81,7 @@ export default function ProductsList({ products, price }) {
         <br></br>
         <a
           id={btnId}
-          className="want-category-btn indigo accent-2 white-text"
+          className="want-category-btn indigo white-text"
           href={MessengerLink(buildMessage(products[0].name))}
         >
           <BsMessenger size={"12px"}></BsMessenger> &nbsp; Me interesa

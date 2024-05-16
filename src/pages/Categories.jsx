@@ -12,7 +12,7 @@ export default function Categories(){
       <>
         <div style={{ position: "relative" }}>
           <img src={RootURL + "img/" + category.img} style={{ width: "100%" }}></img>
-          <h5 className="blue-text text-darken-4 img-title">
+          <h5 className="img-title">
             {category.name}
           </h5>
         </div>

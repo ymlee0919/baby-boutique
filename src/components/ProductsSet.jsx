@@ -123,7 +123,7 @@ export default function ProductsSet({ topProducts, bottomProducts, subCategory, 
         <br></br>
         <a
           id={btnId}
-          className="want-category-btn indigo accent-2 white-text"
+          className="want-category-btn indigo white-text"
           href={MessengerLink(buildMessage(subCategory, topProductName.current, bottomProductName.current))}
         >
           <BsMessenger size={"12px"}></BsMessenger> &nbsp; Me interesa

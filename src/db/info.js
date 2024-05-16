@@ -3,14 +3,15 @@ const INFO = {
         {
             "id" : 1,
             "name": "Ropita para hembra",
+			"description": "Batas finas, juegos de salón, blusas, shores y más...",
             "url": "hembra",
             "img": "girld.jpg",
             "children" : [
                 { 'id' : 1.1, 'name' : 'Bata fina', 'url' : 'bata-fina', 'img': 'bata-fina.jpg', 'price': 1000, 'description' : 'Bata fina para niña recién nacida'},
+				{ 'id' : 1.5, 'name' : 'Juego de salón', 'url' : 'juego-salon', 'img': 'juego-salon.jpg', 'price': 1000, 'description' : 'Juego para sacar la niña del salón de parto'},
+				{ 'id' : 1.4, 'name' : 'Monito', 'url' : 'mono', 'img': 'mono-hembra.jpg', 'price': 1300, 'description' : 'Mono para niña entre 1 y 3 años'},
 				{ 'id' : 1.2, 'name' : 'Blusa', 'url' : 'blusa', 'img': 'blusa.jpg', 'price': 900, 'description' : 'Blusa para niña entre 1 y 3 años'},
 				{ 'id' : 1.3, 'name' : 'Short', 'url' : 'short', 'img': 'short-hembra.jpg', 'price': 900, 'description' : 'Short para niña entre 1 y 3 años'},
-				{ 'id' : 1.4, 'name' : 'Monito', 'url' : 'mono', 'img': 'mono-hembra.jpg', 'price': 1300, 'description' : 'Mono para niña entre 1 y 3 años'},
-				{ 'id' : 1.5, 'name' : 'Juego de salón', 'url' : 'juego-salon', 'img': 'juego-salon.jpg', 'price': 1000, 'description' : 'Juego para sacar la niña del salón de parto'},
 				{ 'id' : 1.6, 'name' : 'Juego de bebita', 'url' : 'juego-bebita', 'img': 'juego-bebita.jpg', 'price': 1300, 'description' : 'Juego para niña de 10 meses a 2 años'},
 				{ 'id' : 1.9, 'name' : 'Juego de short y blusa', 'url' : 'juego', 'img': 'juego-hembra.jpg', 'price': 1700, 'description' : 'Juego de short y blusa para niña entre 1 y 3 años',
 					'items' : [1.2, 1.3]
@@ -21,14 +22,15 @@ const INFO = {
         {
             "id" : 2,
             "name": "Ropita para varón",
+			"description": "Juegos de hilo, juegos de salón, pullover y shores para su niño.",
             "url": "varon",
             "img": "boy.jpg",
             "children" : [
                 { 'id' : 2.1, 'name' : 'Juego de hilo', 'url' : 'juego-hilo', 'img': 'juego-hilo.jpg', 'price': 1300, 'description' : 'Juego de hilo para niño recién nacido y hasta 3 meses'},
-				{ 'id' : 2.2, 'name' : 'Camiseta', 'url' : 'camiseta', 'img': 'camiseta.jpg', 'price': 750, 'description' : 'Camiseta para niño de 1 a 3 años'},
-				{ 'id' : 2.3, 'name' : 'Pullover', 'url' : 'pullover', 'img': 'pullover.jpg', 'price': 900, 'description' : 'Pullover para niño de 1 a 3 años'},
-				{ 'id' : 2.4, 'name' : 'Short', 'url' : 'short', 'img': 'short-varon.jpg', 'price': 900, 'description' : 'Short para niño de 1 a 3 años'},
 				{ 'id' : 2.5, 'name' : 'Juego de salón', 'url' : 'juego-salon', 'img': 'juego-salon.jpg', 'price': 1000, 'description' : 'Juego para sacar al niño del salón de parto'},
+				{ 'id' : 2.2, 'name' : 'Camiseta', 'url' : 'camiseta', 'img': 'camiseta.jpg', 'price': 750, 'description' : 'Camiseta para niño de 1 a 3 años'},
+				{ 'id' : 2.4, 'name' : 'Short', 'url' : 'short', 'img': 'short-varon.jpg', 'price': 900, 'description' : 'Short para niño de 1 a 3 años'},
+				{ 'id' : 2.3, 'name' : 'Pullover', 'url' : 'pullover', 'img': 'pullover.jpg', 'price': 900, 'description' : 'Pullover para niño de 1 a 3 años'},
 
 				{ 'id' : 2.9, 'name' : 'Juego de short y pullover', 'url' : 'juego', 'img': 'juego-varon.jpg', 'price': 1700, 'description' : 'Juego de short y pullover para niño de 1 a 3 años',
 					'items':[2.3, 2.4]
@@ -39,6 +41,7 @@ const INFO = {
         {
             "id" : 3,
             "name": "Accesorios",
+			"description": "Pañales finos y juegos de cuna",
             "url": "accesorios",
             "img": "utils.jpg",
             "children" : [

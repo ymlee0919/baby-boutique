@@ -14,7 +14,7 @@ export default function SubCategory({ category, subCategory, parentUrl }) {
         <NavLink to={RootURL + parentUrl + "/" + subCategory.url}>
           <div className="card-image">
             <img src={RootURL + "img/category/" + subCategory.img}></img>
-            <span className="card-title indigo-text text-darken-2 white-shadow-text text-bold">
+            <span className="card-title blue-shadow-text text-bold">
               {subCategory.name}
             </span>
             <span className="btn-floating deep-orange darken-4 halfway-fab price-btn center-align">
@@ -28,10 +28,10 @@ export default function SubCategory({ category, subCategory, parentUrl }) {
         <div className="card-action center-align">
           <NavLink to={RootURL + parentUrl + "/" + subCategory.url}>
             <BsSearch size={"12px"}></BsSearch> &nbsp;Ver todo
-          </NavLink>{" "}
+          </NavLink>
           &nbsp; &nbsp;
           <a
-            className="want-category-btn indigo accent-2 white-text"
+            className="want-category-btn indigo white-text"
             href={MessengerLink(buildMessage(category, subCategory.name))}
           >
             <BsMessenger size={"12px"}></BsMessenger> &nbsp; Me interesa
