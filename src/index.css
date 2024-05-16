@@ -93,6 +93,23 @@ span.price-label {
     border-radius: 10px;
 }
 
+.carousel-top-wrapper {
+    border: 1px solid var(--md-ref-palette-primary70);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0 ;
+}
+
+div.carousel-top-wrapper > ul.indicators {
+    bottom: auto;
+    top: 0;
+}
+
+.carousel-bottom-wrapper {
+    border: 1px solid var(--md-ref-palette-primary70);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+}
+
 .carousel.carousel-slider .carousel-fixed-item.with-indicators {
     bottom: 5px !important;
 }
