@@ -30,7 +30,7 @@ export default function Index() {
                       </span>
                     </div>
                   </NavLink>
-                  <div className="card-content description-text grey-text text-darken-2">
+                  <div className="card-content bg-white description-text grey-text text-darken-2">
                     {category.description}
                   </div>
                   <div className="card-action center-align">
