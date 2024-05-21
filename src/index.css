@@ -3,6 +3,9 @@ html{
     scroll-behavior: smooth;
 }
 
+.working-area{
+    padding-bottom: 50px;
+}
 .brand-logo > img{
     height: 45px;
     padding-top: 10px;
@@ -142,8 +145,19 @@ div.card-action{
 
 .back-btn{
     position: fixed;
-    bottom: 51px;
-    right: 10px;
+    bottom: 12px;
+    right: 12px;
     border-radius: 29px !important;
-    height: 56px !important;
+    height: 46px !important;
+    --padding: 11px !important;
+    z-index: 300;
+}
+
+.block{
+    display: block;
+}
+
+.border-left{
+    border-left: 4px solid #3f51b5;
+    border-radius: 0 15px 15px 0;
 }

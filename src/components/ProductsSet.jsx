@@ -113,8 +113,7 @@ export default function ProductsSet({ topProducts, bottomProducts, subCategory, 
         {bottomList}
       </div>
 
-      <span className="grey-text text-darken-3">
-        {" "}
+      <span className="grey-text text-darken-2 py-1 px-2 mt-1 block blue lighten-4 border-left">
         * Deslice las imágenes para ver las ofertas
       </span>
       <br></br>

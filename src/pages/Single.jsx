@@ -12,8 +12,8 @@ export default function Single({category, subCategory}) {
       <>
         <div className="container">
           <div className="center-align">
-            <h3 className="indigo-text text-darken-3">{category.name}</h3>
-            <h4 className="indigo-text text-darken-2">{subCategory.name}</h4>
+            <h5 className="indigo-text text-darken-3">{category.name}</h5>
+            <h6 className="indigo-text text-darken-2">{subCategory.name}</h6>
             <br></br>
             <p className="description-text grey-text text-darken-2">
               {subCategory.description}
