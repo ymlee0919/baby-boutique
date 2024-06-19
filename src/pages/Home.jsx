@@ -5,6 +5,9 @@ import MessengerLink from "../helper/url";
 import { RootURL } from "../App";
 
 export default function Index() {
+
+  let h = window.innerWidth * 0.9;
+
   return (
     <>
       <img
@@ -24,7 +27,10 @@ export default function Index() {
                 <div className="card">
                   <NavLink to={`${RootURL}${category.url}`}>    
                     <div className="card-image">
-                      <img src={RootURL + "img/" + category.img}></img>
+                      <img className="lazy-img"
+                        width={h}
+                        height={h} 
+                        src={RootURL + "img/" + category.img}></img>
                       <span className="card-title blue-shadow-text text-bold">
                         {category.name}
                       </span>

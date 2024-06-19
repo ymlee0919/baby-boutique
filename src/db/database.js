@@ -1,7 +1,18 @@
-import INFO from './info.js'
+import { RootURL } from "../App";
 
 const DataBase = {
-    info : INFO,
+
+    info : null,
+
+    init : function(onLoaded){
+        let me = this;
+        fetch(RootURL + 'public/data/info.json')
+        .then(response => response.json())
+        .then((data) => {
+            me.info = data;
+            onLoaded();
+        })
+    },
 
     getCategories: function(){
         return this.info['categories'];

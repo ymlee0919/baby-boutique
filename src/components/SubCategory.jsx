@@ -8,12 +8,17 @@ function buildMessage(category, subCategory) {
 }
 
 export default function SubCategory({ category, subCategory, parentUrl }) {
+  let h = window.innerWidth * 0.9;
   return (
     <>
       <div className="card">
         <NavLink to={RootURL + parentUrl + "/" + subCategory.url}>
           <div className="card-image">
-            <img src={RootURL + "img/category/" + subCategory.img}></img>
+            <img
+            className="lazy-img"
+            width={h}
+            height={h} 
+             src={RootURL + "img/category/" + subCategory.img}></img>
             <span className="card-title blue-shadow-text text-bold">
               {subCategory.name}
             </span>

@@ -7,11 +7,14 @@ export default function Categories(){
 
     let params = useParams();
     let category = DataBase.getCategoryByUrl(params.category);
+    
 
     return (
       <>
         <div style={{ position: "relative" }}>
-          <img src={RootURL + "img/" + category.img} style={{ width: "100%" }}></img>
+          <img 
+            src={RootURL + "img/" + category.img} 
+            style={{ width: "100%" }}></img>
           <h5 className="img-title">
             {category.name}
           </h5>
