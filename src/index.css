@@ -163,7 +163,7 @@ div.card-action{
 }
 
 .lazy-img{
-    background: url('/baby-boutique/public/img/loading.gif');
+    background: url('/baby-boutique/img/loading.gif');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
