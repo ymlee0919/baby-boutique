@@ -6,7 +6,7 @@ const DataBase = {
 
     init : function(onLoaded){
         let me = this;
-        fetch(RootURL + 'public/data/info.json')
+        fetch(RootURL + 'data/info.json')
         .then(response => response.json())
         .then((data) => {
             me.info = data;
