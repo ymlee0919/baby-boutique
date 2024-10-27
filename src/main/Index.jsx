@@ -1,5 +1,7 @@
 import { Outlet, NavLink, useNavigate } from "react-router-dom";
 import {MdChevronLeft, MdMenu, MdOutlineHome} from "react-icons/md"
+import { RiShieldCheckFill } from "react-icons/ri";
+import {FaHeartCircleCheck, FaMedal } from "react-icons/fa6";
 import { useEffect } from "react";
 import { M } from "@materializecss/materialize";
 import DataBase from "../db/database";
@@ -12,8 +14,8 @@ export default function Index()
   let navigate = useNavigate();
 
   useEffect(() => {
-    let elems = document.querySelectorAll(".dropdown-trigger");
-    let instances = M.Dropdown.init(elems, {
+    let dropdowns = document.querySelectorAll(".dropdown-trigger");
+    let instances = M.Dropdown.init(dropdowns, {
       constrainWidth: false,
       coverTrigger: false
     });
@@ -64,6 +66,14 @@ export default function Index()
       </div>
       <div id="woking-area" className="working-area">
         <Outlet />
+      </div>
+      <div id="footer" className="footer blue darken-2 white-text">
+      <h4 className="footer-header">BabyBoutique</h4>
+        <div className="container">
+            <p className="footer-item"><span className="footer-icon"><FaHeartCircleCheck/></span> <span className="footer-text">Belleza y confort para su niño</span></p>
+            <p className="footer-item"><span className="footer-icon"><FaMedal/></span> <span className="footer-text">Calidad en el producto</span></p>
+            <p className="footer-item"><span className="footer-icon"><RiShieldCheckFill/></span> <span className="footer-text">Seriedad y seguridad en el servicio</span></p>
+        </div>
       </div>
       <a href="#!" onClick={() => navigate(-1)} className="btn back-btn white grey-text z-depth-1 rounded waves-effect waves-light">
         <MdChevronLeft size={"1.7rem"}></MdChevronLeft>

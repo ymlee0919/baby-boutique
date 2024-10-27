@@ -5,8 +5,6 @@ import MessengerLink from "../helper/url";
 import { RootURL } from "../App";
 
 function buildMessage(subCategory, topProductName, bottomProductName) {
-  console.log(topProductName);
-  console.log(bottomProductName);
   return `Hola, de sus ofertas de ropa de bebé hay algo que me interesa, ${subCategory.toLowerCase()}. 
   Me gustaría con ${topProductName.toLowerCase()} y ${bottomProductName.toLowerCase()}.`;
 }
@@ -113,7 +111,7 @@ export default function ProductsSet({ topProducts, bottomProducts, subCategory, 
         {bottomList}
       </div>
 
-      <span className="grey-text text-darken-2 py-1 px-2 mt-1 block blue lighten-4 border-left">
+      <span className="grey-text text-darken-2 py-1 px-2 mt-1 block lighten-4 border-left">
         * Deslice las imágenes para ver las ofertas
       </span>
       <br></br>

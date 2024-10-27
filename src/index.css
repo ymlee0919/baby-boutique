@@ -1,11 +1,37 @@
 html{
-    font-family: Poppins, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+    /*font-family: Poppins, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, sans-serif !important;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+
     scroll-behavior: smooth;
 }
 
 .working-area{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
+
+.footer {
+    padding: 20px 4px 35px;
+    margin-bottom: 0 !important;
+}
+
+.footer-header {
+    text-align: right;
+    padding-bottom: 9px;
+    padding-right: 10px;
+    border-bottom: 1px solid #FFFFFF;
+}
+.footer-item{
+    display: inline-flex;
+}
+
+.footer-icon{
+    font-size: 25px;
+}
+
+.footer-text {
+    padding: 5px;
+}
+
 .brand-logo > img{
     height: 45px;
     padding-top: 10px;
@@ -16,7 +42,7 @@ html{
 }
 
 .subtitle {
-    font-size: 25px;
+    line-height: 1.5;
 }
 
 .img-title {
@@ -24,10 +50,11 @@ html{
     bottom: 7px;
     right: 0px;
     text-shadow: 1px 1px 4px #182150;
-    background-color: rgb(225 245 254 / 50%);
+    background-color: rgb(59 152 194 / 50%);
     padding: 5px 20px;
-    border-radius: 17px 0 0 17px;
+    border-radius: 20px 0 0 20px;
     color: #e1f5fe;
+    max-width: 80%;
 }
 
 .blue-shadow-text {
@@ -126,21 +153,31 @@ div.carousel-fixed-item > div > span.price-label{
     background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) !important;
 }
 
-.card {
-    border-radius: 0 !important;
+.card .card-content{
+    padding: 17px !important;
+    /*background: linear-gradient(180deg, rgb(235 236 241), rgb(209 232 252));*/
 }
 
-.card .card-content{
-    padding: 20px !important;
-    background: linear-gradient(180deg, rgb(235 236 241), rgb(209 232 252));
+div.card-action > a {
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 8px 12px !important;
+    margin: 12px !important;
 }
 
 .card .card-title {
     font-size: 22px !important;
 }
 
-div.card-action{
-    background-color: #d1e8fc !important;
+.card{
+    box-shadow: 1px 1px 9px #d1dcee !important;
+}
+
+.header-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 .back-btn{
@@ -169,3 +206,16 @@ div.card-action{
     background-size: cover;
 }
 
+.rouded-rect {
+    margin: 5px;
+    padding: 4px 4px 12px 4px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color-dark);
+    color: white
+}
+.rouded-rect > p {
+    font-size: 22px;
+    margin-bottom: 1rem;
+    color: var(--primary-color-hover-solid) !important;
+    
+}

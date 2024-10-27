@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom"
 import DataBase from "../db/database";
 import SubCategory from "../components/SubCategory";
 import { RootURL } from "../App";
+import HeaderImg from "../components/HeaderImg";
 
 export default function Categories(){
 
@@ -11,14 +12,7 @@ export default function Categories(){
 
     return (
       <>
-        <div style={{ position: "relative" }}>
-          <img 
-            src={RootURL + "img/" + category.img} 
-            style={{ width: "100%" }}></img>
-          <h5 className="img-title">
-            {category.name}
-          </h5>
-        </div>
+      <HeaderImg src={RootURL + "img/" + category.img} title={category.name}></HeaderImg>
         <br></br>
         <br></br>
         <div className="container">
